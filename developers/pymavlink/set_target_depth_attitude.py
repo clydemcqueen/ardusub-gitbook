@@ -23,8 +23,8 @@ def set_target_depth(depth):
         master.target_system, master.target_component,
         coordinate_frame=mavutil.mavlink.MAV_FRAME_GLOBAL_INT,
         type_mask=( # ignore everything except z position
-            mavutil.mavlink.POSITION_TARGET_TYPEMASK_X_IGNORE |
-            mavutil.mavlink.POSITION_TARGET_TYPEMASK_Y_IGNORE |
+            # DON'T mavutil.mavlink.POSITION_TARGET_TYPEMASK_X_IGNORE |
+            # DON'T mavutil.mavlink.POSITION_TARGET_TYPEMASK_Y_IGNORE |
             # DON'T mavutil.mavlink.POSITION_TARGET_TYPEMASK_Z_IGNORE |
             mavutil.mavlink.POSITION_TARGET_TYPEMASK_VX_IGNORE |
             mavutil.mavlink.POSITION_TARGET_TYPEMASK_VY_IGNORE |
